@@ -35,8 +35,9 @@ func main() {
 
 func RegisterHandlers(mux *http.ServeMux) {
 	mux.HandleFunc("/facilities", task1.GetFacilities)
-	mux.HandleFunc("/facilities", handlePOSTFacilities) // Placeholder for POST /facilities handler
-	mux.HandleFunc("/bookings", handlePOSTBookings)     // Placeholder for POST /bookings handler
-	mux.HandleFunc("/bookings", handleGETBookingsByID)  // Placeholder for GET /bookings?facility_id={ID} handler
-	mux.HandleFunc("/bookings/", handleDELETEBooking)   // Placeholder for DELETE /bookings/{ID} handler
+	//TODO implement
+	//mux.HandleFunc("/facilities", handlePOSTFacilities)                 // Placeholder for POST /facilities handler
+	//mux.HandleFunc("/bookings", handlePOSTBookings)                     // Placeholder for POST /bookings handler
+	//mux.HandleFunc("/bookings?facility_id={id}", handleGETBookingsByID) // Placeholder for GET /bookings?facility_id={ID} handler
+	//mux.HandleFunc("/bookings/{id}", handleDELETEBooking)               // Placeholder for DELETE /bookings/{ID} handler
 }
